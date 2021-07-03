@@ -25,9 +25,9 @@ const stories = [
 
 export default function Home({ navigation }) {
     return (
-        <ScrollView style={{ backgroundColor: '#fff' }}>
+        <ScrollView style={{ backgroundColor: '#f5f9ff' }}>
             <View style={{ paddingTop: 40, paddingBottom: 20 }}>
-                <StatusBar backgroundColor="#fff" barStyle="dark-content" />
+                <StatusBar backgroundColor="#f5f9ff" barStyle="dark-content" />
                 <View style={{ flexDirection: 'row', marginBottom: 40, paddingHorizontal: 20 }} >
                     <View style={{ flex: 1, alignSelf: 'center' }}>
                         <Text style={{ fontSize: 20, color: "#86a1d2" }}>Hello,</Text>

@@ -36,7 +36,7 @@ const conversations = [
 export default function Conversations({ navigation }) {
     return (
         <View style={{ backgroundColor: '#f5f9ff', flex: 1 }}>
-            <StatusBar barStyle='dark-content' backgroundColor="#fff" />
+            <StatusBar barStyle='dark-content' backgroundColor="#f5f9ff" />
             <View style={{ padding: 30, paddingBottom: 0 }}>
                 <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
                     <TouchableOpacity activeOpacity={0.75} style={{ padding: 10, paddingLeft: 0 }} onPress={() => navigation.goBack()}>
