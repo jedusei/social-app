@@ -60,7 +60,7 @@ export default function Home({ navigation }) {
                         </TouchableOpacity>
                     }
                     renderItem={({ item }) =>
-                        <TouchableOpacity activeOpacity={0.75}>
+                        <TouchableOpacity activeOpacity={0.75} onPress={() => navigation.navigate("Conversations")}>
                             <Image source={{ uri: item.imageUrl }} style={{ borderRadius: 50, borderWidth: 2, borderColor: '#ff498b', width: 100, height: 100 }} />
                         </TouchableOpacity>
                     } />
