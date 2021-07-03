@@ -5,14 +5,14 @@ import {
 } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 
-export default function Profile() {
+export default function Profile({ navigation }) {
     return (
         <ScrollView style={{ backgroundColor: '#f5f9ff' }}>
             <View style={{ paddingBottom: 30 }}>
                 <StatusBar barStyle='dark-content' backgroundColor="#fff" />
                 <View style={{ padding: 20, backgroundColor: '#fff', elevation: 4, borderBottomLeftRadius: 20, borderBottomRightRadius: 20 }}>
                     <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
-                        <TouchableOpacity activeOpacity={0.75} style={{ padding: 10, paddingLeft: 0 }}>
+                        <TouchableOpacity activeOpacity={0.75} style={{ padding: 10, paddingLeft: 0 }} onPress={() => navigation.goBack()}>
                             <Ionicons name="md-arrow-back" size={30} color="#445975" />
                         </TouchableOpacity>
                         <TouchableOpacity activeOpacity={0.75} style={{ padding: 10, paddingRight: 0 }}>

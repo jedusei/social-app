@@ -23,7 +23,7 @@ const stories = [
     }
 ];
 
-export default function Home() {
+export default function Home({ navigation }) {
     return (
         <ScrollView style={{ backgroundColor: '#fff' }}>
             <View style={{ paddingTop: 40, paddingBottom: 20 }}>
@@ -34,7 +34,7 @@ export default function Home() {
                         <Text style={{ fontSize: 36, fontWeight: 'bold', color: '#445975' }}>Alvarado!</Text>
                     </View>
                     <View style={{ borderRadius: 45, elevation: 4, backgroundColor: '#fff' }}>
-                        <TouchableOpacity activeOpacity={0.75}>
+                        <TouchableOpacity activeOpacity={0.75} onPress={() => navigation.navigate("Profile")}>
                             <Image source={{ uri: "http://placekitten.com/g/200/199" }} style={{ width: 90, height: 90, borderRadius: 45 }} />
                         </TouchableOpacity>
                     </View>
