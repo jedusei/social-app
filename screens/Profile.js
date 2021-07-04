@@ -10,7 +10,7 @@ export default function Profile({ navigation }) {
         <ScrollView style={{ backgroundColor: '#f5f9ff' }}>
             <View style={{ paddingBottom: 30 }}>
                 <StatusBar barStyle='dark-content' backgroundColor="#fff" />
-                <View style={{ padding: 20, backgroundColor: '#fff', elevation: 4, borderBottomLeftRadius: 20, borderBottomRightRadius: 20 }}>
+                <View style={{ padding: 20, backgroundColor: '#fff', elevation: 4, shadowRadius: 10, shadowOffset: { height: 5 }, shadowOpacity: 0.1, borderBottomLeftRadius: 20, borderBottomRightRadius: 20 }}>
                     <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
                         <TouchableOpacity activeOpacity={0.75} style={{ padding: 10, paddingLeft: 0 }} onPress={() => navigation.goBack()}>
                             <Ionicons name="md-arrow-back" size={30} color="#445975" />
@@ -21,7 +21,7 @@ export default function Profile({ navigation }) {
                     </View>
                     <Text style={{ marginTop: 20, marginBottom: 30, fontSize: 32, fontWeight: 'bold', color: '#445975' }}>My Profile</Text>
                     <View style={{ alignItems: 'center' }}>
-                        <View style={{ borderRadius: 45, elevation: 2 }}>
+                        <View style={{ borderRadius: 45, elevation: 2, shadowRadius: 10, shadowOffset: { height: 5 }, shadowOpacity: 0.1 }}>
                             <Image source={{ uri: "http://placekitten.com/g/200/199" }} style={{ width: 100, height: 100, borderRadius: 50 }} />
                         </View>
                         <Text style={{ marginTop: 20, marginBottom: 10, fontSize: 25, fontWeight: 'bold', color: '#445975' }}>Anna Alvarado</Text>

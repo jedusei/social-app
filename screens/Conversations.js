@@ -47,7 +47,7 @@ export default function Conversations({ navigation }) {
                     </TouchableOpacity>
                 </View>
                 <Text style={{ marginTop: 20, marginBottom: 30, fontSize: 32, fontWeight: 'bold', color: '#445975' }}>Conversation</Text>
-                <View style={{ flexDirection: 'row', backgroundColor: '#fff', borderRadius: 15, paddingStart: 30, paddingEnd: 10, paddingVertical: 10, elevation: 4 }}>
+                <View style={{ flexDirection: 'row', backgroundColor: '#fff', borderRadius: 15, paddingStart: 30, paddingEnd: 10, paddingVertical: 10, elevation: 4, shadowRadius: 10, shadowOffset: { height: 5 }, shadowOpacity: 0.1 }}>
                     <View style={{ width: 50, height: 50, elevation: 4, backgroundColor: '#ff8fbc', borderRadius: 25, alignItems: 'center', justifyContent: 'center' }}>
                         <Feather name="search" size={24} color="#fff" />
                     </View>
@@ -71,12 +71,12 @@ export default function Conversations({ navigation }) {
                     </TouchableOpacity>
                 } />
 
-            <TouchableOpacity activeOpacity={0.75} style={{ position: 'absolute', bottom: 30, right: 30 }}>
+            <TouchableOpacity activeOpacity={0.75} style={{ position: 'absolute', bottom: 30, right: 30, shadowRadius: 10, shadowOffset: { height: 10 }, shadowOpacity: 0.2, }}>
                 <View style={{ elevation: 4, backgroundColor: '#ff79aa', paddingEnd: 5, paddingBottom: 2, width: 70, height: 70, borderRadius: 35, alignItems: 'center', justifyContent: 'center' }}>
                     <AntDesign name="edit" size={30} color="#fff" />
                 </View>
             </TouchableOpacity>
-        </View>
+        </View >
     );
 }
 
